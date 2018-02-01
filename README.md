@@ -6,6 +6,7 @@ Schulprojekt in Anwendungsentwicklung.
 # Allgemein
 ### ToDo
 1. Projektstrukturplan
+2. Konzeptionierung
 
 ### Changes
 1.
