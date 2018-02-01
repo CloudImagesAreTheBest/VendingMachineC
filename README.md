@@ -1,13 +1,14 @@
-# VendingMachineC
-Schulprojekt "Getränkeautomat" in Anwendungsentwicklung. Abgabe: Mittwoch, den 28. Februar 2018
+# Abgabe Mittwoch, 28. Februar 2018
 
+# Getränkeautomat
+Schulprojekt in Anwendungsentwicklung.
 
 # Allgemein
-## ToDo
+### ToDo
 1. Projektstrukturplan
 
-## Changes
+### Changes
 1.
 
-## Milestones
+### Milestones
 01.02.2018: GitHub-Repository
