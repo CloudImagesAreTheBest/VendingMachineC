@@ -25,7 +25,13 @@ int main()
     }
 
 
-
+/*
+Function name: Restgeld
+Arguments:
+- Uergabewert_Muenzeinwurf: Das ist das was der Nutzer an Münzen eingegeben hat
+- Geldforderung: Das ist der Preis des Artikels
+Output / Result: Das Restgeld wird berechnet
+*/
 double Restgeld(double Uebergabewert_Muenzeinwurf,double Geldforderung)
 {
     double Restgeld = 0.0;
