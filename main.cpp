@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 // KeMay <<<
+#include<string>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ void Benutzeroberflaeche();
 int Auswahl();
 float fEingabe(string,int);
 int iEingabe(string,int);
+int CharPointerToInt(char);
 
 int main()
 {
@@ -55,43 +57,47 @@ Getränkeausgabe();
 // Erster Versuch Geldeinwurf - Muesste aber mit Do-While mehr Sinn machen -> so wie jetzt funktionierts noch nicht bis jetzt noch keine weitere Zeit gehabt
 
 
+double dGeldEinwurf(double Geldforderung)
+{// Fertig
+	int Kategorie = 0;
+	double Muenzwert = 0.0;
+	while (Geldforderung <= Muenzwert)
+	{
+		switch (Kategorie)
+		{
+		case 1:
+			Muenzwert = Muenzwert + 0.01;
+			break;
+		case 2:
+			Muenzwert = Muenzwert + 0.02;
+			break;
+		case 3:
+			Muenzwert = Muenzwert + 0.05;
+			break;
+		case 4:
+			Muenzwert = Muenzwert + 0.10;
+			break;
+		case 5:
+			Muenzwert = Muenzwert + 0.20;
+			break;
+		case 6:
+			Muenzwert = Muenzwert + 0.50;
+			break;
+		case 7:
+			Muenzwert = Muenzwert + 1.00;
+			break;
+		case 8:
+			Muenzwert = Muenzwert + 2.00;
+			break;
+		default:
+			cout << endl << "Falsche Eingabe" << endl;
+			break;
 
-int Geldforderung=0;
-int Kategorie=0, Muenzwert=0;
-while(Geldforderung<=Muenzwert)
-switch(Kategorie)
-{
-    case 1:
-            Muenzwert=Muenzwert+1;
-            break;
-    case 2:
-            Muenzwert=Muenzwert+2;
-            break;
-    case 3:
-            Muenzwert=Muenzwert+5;
-            break;
-    case 4:
-            Muenzwert=Muenzwert+10;
-            break;
-    case 5:
-            Muenzwert=Muenzwert+20;
-            break;
-    case 6:
-            Muenzwert=Muenzwert+50;
-            break;
-    case 7:
-            Muenzwert=Muenzwert+100;
-            break;
-    case 8:
-            Muenzwert=Muenzwert+200;
-            break;
-    default:
-            cout<<"falsche eingabe";
-            break;
+		}
 
+	}
+	return Muenzwert;
 }
-
-
 
 //Funktionen Pruefziffer, Benutzeroberflaeche und Auswahl
 
@@ -103,19 +109,33 @@ int Pruefziffer()
     int iWeiter = 0;
 
 	do
-        {
-        cout << "Bitte geben Sie Ihre 7-stellige Kundennummer ein" << endl;
-        //scanf("%i",&Pruef);
-        //printf("%i",Pruef);
+	{// String -> ABCD  -> |A|B|C|D|\0|
+     
+		cout << "Bitte geben Sie Ihre 7-stellige Kundennummer ein" << endl;
 
-        Erste = iEingabe("X",1);
-        Zweite = iEingabe("X",1);
-        Dritte = iEingabe("X",1);
-        Vierte = iEingabe("X",1);
-        Fuenfte = iEingabe("X",1);
-        Sechste = iEingabe("X",1);
-        Pruef = iEingabe("X",1);
+		char cKundennummer[7] = "";
+//		cin >> setw(7) >> cKundennummer;
+		// TEST
+		int i=1;
+		while (cKundennummer[i-1]!=EOF)
+		{
+			cKundennummer[i] = getchar();
+			i++;
+		}
+		// GLPI >>>
+		CharPointerToInt(cKundennummer[0]);
+		// GLPI <<<
+		cout << Pruef;
 
+		
+        Erste = CharPointerToInt(cKundennummer[0]);
+        Zweite = CharPointerToInt(cKundennummer[1]);
+        Dritte = CharPointerToInt(cKundennummer[2]);
+        Vierte = CharPointerToInt(cKundennummer[3]);
+        Fuenfte = CharPointerToInt(cKundennummer[4]);
+        Sechste = CharPointerToInt(cKundennummer[5]);
+		Pruef = CharPointerToInt(cKundennummer[6]);
+		
         Ergebnis_1 = Erste * 7;
         Ergebnis_2 = Zweite * 6;
         Ergebnis_3 = Dritte * 5;
@@ -304,4 +324,41 @@ char cEingabe()
     char cPuffer = 'a';
     cin >> cPuffer;
     return cPuffer;
+}
+
+int CharPointerToInt(char cZeichen)
+{
+	switch (cZeichen)
+	{
+	case '1':
+			return 1;
+			break;
+		case '2':
+			return 2;
+			break;
+		case '3':
+			return 3;
+			break;
+		case '4':
+			return 4;
+			break;
+		case '5':
+			return 5;
+			break;
+		case '6':
+			return 6;
+			break;
+		case '7':
+			return 7;
+			break;
+		case '8':
+			return 8;
+			break;
+		case '9':
+			return 9;
+			break;
+		case '0':
+			return 0;
+			break;
+	}
 }
