@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.25" text="&#34;UNTERPROGRAMM: CharPointerToInt  &#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<case text="&#34;cZeichen?&#34;,&#34;1 (als Zeichen)&#34;,&#34;2 (als Zeichen)&#34;,&#34;3 (als Zeichen)&#34;,&#34;4 (als Zeichen)&#34;,&#34;5 (als Zeichen)&#34;,&#34;6 (als Zeichen)&#34;,&#34;7 (als Zeichen)&#34;,&#34;8 (als Zeichen)&#34;,&#34;9 (als Zeichen)&#34;,&#34;0 (als Zeichen)&#34;" comment="&#34;&#34;" color="ffffff">
+			<qCase>
+				<instruction text="&#34;Rückgabe von 1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 2&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 3&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 4&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 5&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 6&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 8&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 9&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Rückgabe von 0&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+		</case>
+	</children>
+</root>

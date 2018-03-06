@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.25" text="&#34;UNTERPROGRAMM: Auswahl&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Variablen Kategorie1, Geldforderung, Kategorie2 mit 0 initialisieren&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Ausgabe : Eingabe Kategorie 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Eingabe für Kategorie1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<case text="&#34;Kategorie1?&#34;,&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;,&#34;5&#34;,&#34;6&#34;,&#34;sonst&#34;" comment="" color="ffffff">
+			<qCase>
+				<instruction text="&#34;Ausgabe : Eingabe Kategorie 2&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Eingabe : Kategorie 2&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<case text="&#34;Kategorie2?&#34;,&#34;s&#34;,&#34;z&#34;,&#34;m&#34;,&#34;b&#34;,&#34;sonst&#34;" comment="" color="ffffff">
+					<qCase>
+						<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Geldforderun&#60;-Geldforderung+0.8&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.8&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.9&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qCase>
+					<qCase>
+						<instruction text="&#34;Ausgabe: Zurück zum Hauptmenü&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qCase>
+				</case>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.75&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.85&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Preis, Auffoderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Preis, Aufforderung Münzeinwurf&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Geldforderung&#60;-Geldforderung+0.95&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Falsche Eingabe&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qCase>
+		</case>
+		<instruction text="&#34;Rückgabe von der Variablen Geldforderung&#34;" comment="" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

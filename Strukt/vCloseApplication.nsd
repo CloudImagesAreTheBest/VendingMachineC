@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.25" text="&#34;UNTERPROGRAMM: vCloseApplication&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;iStatus mit 0 initialisieren&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Ausgabe : Eingabedialog für iStatus&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Eingabe : iStatus&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;(iStatus gleich 1 ?)&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Löschen des Bildschirms&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Programm Beenden&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+	</children>
+</root>
