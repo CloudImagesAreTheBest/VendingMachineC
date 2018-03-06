@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.25" text="&#34;Kaffeeautomat&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;dPuffer mit 0 initialisieren&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<while text="&#34;Endlosschleife&#34;" comment="" color="ffffff">
+			<qWhile>
+				<instruction text="&#34;Pruefziffer()&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Benutzeroberflaeche()&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;dPuffer&#60;-Auswahl()&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;dPuffer&#60;-dGeldeinwurf()&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;CoinOutput()&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;OutputItem()&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;vCloseApplication()&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qWhile>
+		</while>
+	</children>
+</root>
