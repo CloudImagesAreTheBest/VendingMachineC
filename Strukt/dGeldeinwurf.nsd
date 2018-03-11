@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root xmlns:nsd="http://structorizer.fisch.lu/" version="3.25" text="&#34;UNTERPROGRAMM: dGeldEinwurf&#34;" comment="" color="ffffff" type="program" style="nice">
 	<children>
-		<instruction text="&#34;Variablen iInput, Muenzwert mit 0 initialisieren&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-		<instruction text="&#34;Ausgabe: Menueleiste&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-		<while text="&#34;Solange Geldforderung kleiner oder gleich Muenzwert&#34;" comment="" color="ffffff">
+		<instruction text="&#34;Variablen iInput, Muenzwert mit 0 initialisieren&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Ausgabe: Menueleiste&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<while text="&#34;Solange Geldforderung kleiner Muenzwert&#34;" comment="&#34;&#34;" color="ffffff">
 			<qWhile>
-				<instruction text="&#34;Eingabe: iInput&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-				<case text="&#34;iInput?&#34;,&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;,&#34;5&#34;,&#34;6&#34;,&#34;7&#34;,&#34;8&#34;,&#34;sonst&#34;" comment="&#34;&#34;" color="ffffff">
+				<instruction text="&#34;Eingabe: iInput&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<case text="&#34;iInput?&#34;,&#34;1&#34;,&#34;2&#34;,&#34;3&#34;,&#34;4&#34;,&#34;5&#34;,&#34;6&#34;,&#34;7&#34;,&#34;8&#34;,&#34;sonst&#34;" comment="" color="ffffff">
 					<qCase>
 						<instruction text="&#34;Muenzwert&#60;-Muenzwert+0.01&#34;" comment="" color="ffffff" rotated="0"></instruction>
 					</qCase>
@@ -37,7 +37,7 @@
 				</case>
 			</qWhile>
 		</while>
-		<instruction text="&#34;Ausgabe: Muenzwert&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
-		<instruction text="&#34;Muenzwert&#60;-Muenzwert-Geldforderung&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Ausgabe: Muenzwert&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Muenzwert&#60;-Muenzwert-Geldforderung&#34;" comment="" color="ffffff" rotated="0"></instruction>
 	</children>
 </root>
