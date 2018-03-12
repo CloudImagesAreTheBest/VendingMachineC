@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.25" text="&#34;UNTERPROGRAMM: PRUEFZIFFER&#34;" comment="&#34;In der Funktion Prüfziffer wird durch das Modulo-10 Verfahren eine 7-Kundennummer überprüft.&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Deklaration: Erste, Zweite, Dritte, Vierte, Fuenfte, Sechste, Pruef,&#34;,&#34;Ergebnis_1, Ergebnis_2, Ergebnis_3, Ergebnis_4, Ergebnis_5, Ergebnis_6,&#34;,&#34;ErgebnisSumme, Modulo, Pruefzahl, iWeiter mit 0 initialisieren&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<repeat text="&#34;Solange iWeiter gleich 1&#34;" comment="" color="ffffff">
+			<qRepeat>
+				<instruction text="&#34;Löschen des Eingabepuffers&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Eingabedialog für die Kundennummer&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Erste&#60;-Aufruf Funktion CharPointerToInt mit Kundennummer an der Stelle 0&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Zweite&#60;-Aufruf Funktion CharPointerToInt mit Kundennummer an der Stelle 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Dritte&#60;-Aufruf Funktion CharPointerToInt mit Kundennummer an der Stelle 2&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Vierte&#60;-Aufruf Funktion CharPointerToInt mit Kundennummer an der Stelle 3&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Fuenfte&#60;-Aufruf Funktion CharPointerToInt mit Kundennummer an der Stelle 4&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Sechste&#60;-Aufruf Funktion CharPointerToInt mit Kundennummer an der Stelle 5&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Pruef&#60;-Aufruf Funktion CharPointerToInt mit Kundennummer an der Stelle 6&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ergebnis_1&#60;-Erste*7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ergebnis_2&#60;-Zweite*6&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ergebnis_3&#60;-Dritte*5&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ergebnis_4&#60;-Vierte*4&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ergebnis_5&#60;-Fuenfte*3&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Ergebnis_6&#60;-Sechste*2&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;ErgebnisSumme&#60;-Ergebnis_1+Ergebnis_2+Ergebnis_3+Ergebnis_4+Ergebnis_5+Ergebnis_6&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Modulo&#60;-ErgebnisSumme%10                   &#34;" comment="&#34;Der Rest von ErgebnisSumme/10&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Pruefzahl&#60;-10-Modulo&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<alternative text="&#34;((10-Pruef)=Pruefzahl)&#34;" comment="" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;Löschen des Bildschirms&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;iWeiter&#60;-0&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;Ausgabe: &#34;&#34;Fehlerhafte Eingabe&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;iWeiter&#60;-1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qFalse>
+				</alternative>
+			</qRepeat>
+		</repeat>
+	</children>
+</root>
